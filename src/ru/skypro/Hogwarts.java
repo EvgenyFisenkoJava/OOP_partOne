@@ -31,8 +31,8 @@ public class Hogwarts {
         this.apparition = apparition;
     }
 
-    public void printStudent() {
-        System.out.print("Имя: " + getName() + ", Колдовство: " + getMagic() + ", Трансгрессия: " + getApparition());
+    public String toString () {
+        return "Имя: " + this.getName() + ", Колдовство: " + this.getMagic() + ", Трансгрессия: " + this.getApparition();
     }
 
     public void compareStudentsMagic (Hogwarts name) {
