@@ -57,10 +57,8 @@ public class Slytherin extends Hogwarts{
         this.powerLust = powerLust;
     }
 
-    @Override
     public void printStudent() {
-        super.printStudent();
-        System.out.println(", Хитрость: " + getCunning() + ", Решительность: " + getDecisiveness() +
+        System.out.println(super.toString() + ", Хитрость: " + getCunning() + ", Решительность: " + getDecisiveness() +
                 ", Амбициозность: " + getAmbition() + ", Находчивость: " + getIngenuity() +
                 ", Жажда власти: " + getPowerLust());
     }
@@ -69,9 +67,9 @@ public class Slytherin extends Hogwarts{
         int sum = this.getCunning() + this.getDecisiveness() + this.getAmbition() + this.getIngenuity() + this.getPowerLust();
         int sum2 = name.getCunning() + name.getDecisiveness() + name.getAmbition()+ name.getIngenuity() + name.getPowerLust();
         if (sum > sum2) {
-            System.out.println(this.getName() + " лучший Пуффендуец чем " + name.getName());
+            System.out.println(this.getName() + " лучший Слизеринец, чем " + name.getName());
         } else {
-            System.out.println(name.getName() + " лучший Пуффендуец чем " + this.getName());
+            System.out.println(name.getName() + " лучший Слизеринец, чем " + this.getName());
         }
     }
 }
